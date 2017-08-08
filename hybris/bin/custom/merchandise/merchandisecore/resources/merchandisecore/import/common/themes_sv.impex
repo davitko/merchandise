@@ -1,0 +1,11 @@
+#
+# Import Themes
+#
+
+# Language
+$lang=sv
+
+# SiteTheme
+UPDATE SiteTheme;code[unique=true];name[lang=$lang]
+ ;black;"Svart"
+ ;blue;"Blå"
