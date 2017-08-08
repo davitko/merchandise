@@ -1766,10 +1766,6 @@ div.z-groupbox-hl div.z-groupbox-header{
 	max-height : 550px;
 }
 
-.component_editor_component_south {
-	min-height: 280px;
-}
-
 .component_editor_component_south .z-south-header {
 	position: relative;
 	text-align: left;

@@ -11,8 +11,8 @@ $facetSearchConfigDescription=
 $searchIndexNamePrefix=
 $solrIndexedType=
 $indexBaseSite=
-$indexLanguages=ja,en,de,zh,sv
-$indexCurrencies=JPY,USD,SEK
+$indexLanguages=ja,en,de,zh
+$indexCurrencies=JPY,USD
 
 
 #

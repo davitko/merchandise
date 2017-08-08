@@ -12,8 +12,8 @@ $facetSearchConfigDescription=hybris Solr Index
 $searchIndexNamePrefix=$prefix
 $solrIndexedType=$prefixProductType
 $indexBaseSite=$prefix
-$indexLanguages=en,de,sv
-$indexCurrencies=EUR,GBP,USD,SEK
+$indexLanguages=en,de
+$indexCurrencies=EUR,GBP,USD
 $priceRangeGBP=$prefixPriceRangeGBP
 $priceRangeEUR=$prefixPriceRangeEUR
 
@@ -50,8 +50,6 @@ INSERT_UPDATE SolrValueRangeSet;name[unique=true];qualifier;type;solrValueRanges
 ;$priceRangeGBP;GBP;double;rangeRefGBP1,rangeRefGBP2,rangeRefGBP3,rangeRefGBP4,rangeRefGBP5,rangeRefGBP6,rangeRefGBP7,rangeRefGBP8,rangeRefGBP9,rangeRefGBP10,rangeRefGBP11,rangeRefGBP12,rangeRefGBP13
 ;$priceRangeEUR;EUR;double;rangeRefEUR1,rangeRefEUR2,rangeRefEUR3,rangeRefEUR4,rangeRefEUR5,rangeRefEUR6,rangeRefEUR7,rangeRefEUR8,rangeRefEUR9,rangeRefEUR10,rangeRefEUR11,rangeRefEUR12,rangeRefEUR13
 ;$priceRangeUSD;USD;double;rangeRefUSD1,rangeRefUSD2,rangeRefUSD3,rangeRefUSD4,rangeRefUSD5,rangeRefUSD6,rangeRefUSD7,rangeRefUSD8,rangeRefUSD9,rangeRefUSD10,rangeRefUSD11,rangeRefUSD12,rangeRefUSD13
-# Swedis Crown value range set
-;$priceRangeUSD;SEK;double;rangeRefSEK1,rangeRefSEK2,rangeRefSEK3,rangeRefSEK4,rangeRefSEK5,rangeRefSEK6,rangeRefSEK7,rangeRefSEK8,rangeRefSEK9,rangeRefSEK10,rangeRefSEK11,rangeRefSEK12,rangeRefSEK13
 
 # Define price ranges
 INSERT_UPDATE SolrValueRange;&rangeValueRefID;solrValueRangeSet(name)[unique=true];name[unique=true];from;to
@@ -83,20 +81,19 @@ INSERT_UPDATE SolrValueRange;&rangeValueRefID;solrValueRangeSet(name)[unique=tru
 ;rangeRefEUR12;$priceRangeEUR; €900-€999.99; 900;999.99
 ;rangeRefEUR13;$priceRangeEUR; €1,000-€100,000;1000;100000
 
-#Range for Swedish crown
-;rangeRefSEK1 ;$priceRangeSEK;    kr0-kr19.99;   0; 19.99
-;rangeRefSEK2 ;$priceRangeSEK;   kr20-kr49.99;  20; 49.99
-;rangeRefSEK3 ;$priceRangeSEK;   kr50-kr99.99;  50; 99.99
-;rangeRefSEK4 ;$priceRangeSEK; kr100-kr199.99; 100;199.99
-;rangeRefSEK5 ;$priceRangeSEK; kr200-kr299.99; 200;299.99
-;rangeRefSEK6 ;$priceRangeSEK; kr300-kr399.99; 300;399.99
-;rangeRefSEK7 ;$priceRangeSEK; kr400-kr499.99; 400;499.99
-;rangeRefSEK8 ;$priceRangeSEK; kr500-kr599.99; 500;599.99
-;rangeRefSEK9 ;$priceRangeSEK; kr600-kr699.99; 600;699.99
-;rangeRefSEK10;$priceRangeSEK; kr700-kr799.99; 700;799.99
-;rangeRefSEK11;$priceRangeSEK; kr800-kr899.99; 800;899.99
-;rangeRefSEK12;$priceRangeSEK; kr900-kr999.99; 900;999.99
-;rangeRefSEK13;$priceRangeSEK; kr1,000-kr100,000;1000;100000
+;rangeRefUSD1 ;$priceRangeUSD;    $0-$19.99;   0; 19.99
+;rangeRefUSD2 ;$priceRangeUSD;   $20-$49.99;  20; 49.99
+;rangeRefUSD3 ;$priceRangeUSD;   $50-$99.99;  50; 99.99
+;rangeRefUSD4 ;$priceRangeUSD; $100-$199.99; 100;199.99
+;rangeRefUSD5 ;$priceRangeUSD; $200-$299.99; 200;299.99
+;rangeRefUSD6 ;$priceRangeUSD; $300-$399.99; 300;399.99
+;rangeRefUSD7 ;$priceRangeUSD; $400-$499.99; 400;499.99
+;rangeRefUSD8 ;$priceRangeUSD; $500-$599.99; 500;599.99
+;rangeRefUSD9 ;$priceRangeUSD; $600-$699.99; 600;699.99
+;rangeRefUSD10;$priceRangeUSD; $700-$799.99; 700;799.99
+;rangeRefUSD11;$priceRangeUSD; $800-$899.99; 800;899.99
+;rangeRefUSD12;$priceRangeUSD; $900-$999.99; 900;999.99
+;rangeRefUSD13;$priceRangeUSD; $1,000-$100,000;1000;100000
 
 
 # Non-facet properties

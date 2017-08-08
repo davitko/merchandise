@@ -2,7 +2,7 @@
 # Import the Content Catalog
 #
 $contentCatalog=hybrisContentCatalog
-$languages=ja,en,de,zh,sv
+$languages=ja,en,de,zh
 # Content catalog for CMS contents
 INSERT_UPDATE ContentCatalog;id[unique=true]
 ;$contentCatalog

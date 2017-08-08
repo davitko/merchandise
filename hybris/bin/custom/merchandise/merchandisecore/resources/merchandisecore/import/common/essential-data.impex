@@ -21,8 +21,6 @@ INSERT_UPDATE Language;isocode[unique=true];fallbackLanguages(isocode);active[de
 ;de;en;;
 ;ja;en;;
 ;zh;en;;
-# swedish language
-;sv;en;;
 
 # Currencies
 INSERT_UPDATE Currency;isocode[unique=true];conversion;digits;symbol
@@ -30,8 +28,6 @@ INSERT_UPDATE Currency;isocode[unique=true];conversion;digits;symbol
 ;EUR;1;2;€
 ;USD;1,4;2;$
 ;JPY;120;0;¥
-# swedish crown
-;SEK;9,6;2;kr
 
 # Vendor
 INSERT_UPDATE Vendor;code[unique=true];name
@@ -77,8 +73,6 @@ INSERT_UPDATE UserTaxGroup;code[unique=true]
 ;uk-taxes
 ;us-taxes
 ;ca-taxes
-# Swedish Taxes
-;se-taxes
 
 INSERT_UPDATE ProductTaxGroup;code[unique=true]
 ;jp-vat-full

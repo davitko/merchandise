@@ -14,7 +14,7 @@
 
 	<extension abstractclassprefix="Generated" classprefix="MerchandiseStorefront" name="merchandisestorefront">
 		<requires-extension name="promotionenginesamplesaddon"/>
-
+<requires-extension name="liveeditaddon"/>
 <requires-extension name="btg"/>
 		<requires-extension name="acceleratorstorefrontcommons"/>
 		<requires-extension name="merchandisefacades"/>
